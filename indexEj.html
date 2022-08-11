@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="container">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+
+
+    <div class="container mt-5 mb-5 p-3 border"> <div class="col-md-6">
+        <label for="Solicitar" class="form-label>Solicitud de
+            Prestamo</label>
+    </div>
+
+    <div class="mt-2 form-row align-items-center">
+        <div class="col-auto my-2">
+            <label class="mr-sm-2" for="inlineFormCustomSelect">Tipo de Prestamo</label>
+            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                <option selected>Choose...</option>
+                <option value="1">Nomina</option>
+                <option value="2">Hipotecario</option>
+                <option value="3">Personal</option>
+                <option value="4">Comercial</option>
+            </select>
+            <div class="mt-2">
+                <label class="mr-sm-2" for="monto" >Monto</label>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend mr-sm-2">
+                    <span class="input-group-text">$</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link">Solicitar</button>
+            </div>
+        </div></div>
+       <!-- 
+    <div class="container mt-5 mb-5 border p-3">
+        <h2 class="text-center">Hoja de Solicitud Prestamo Express</h2>
+        <div class="col-12 bg-info p-2 text-white">Datos Generales:</div>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control border-right-0 border-top-0 border-left-0" id="idnombre"
+                    required>
+            </div>
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Casado</label>
+                <input type="text" class="form-control" id="casado" required>
+            </div>
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Fecha de Nac:</label>
+                <input type="text" class="form-control" id="fechaNac" required>
+            </div>
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Apodo:</label>
+                <input type="text" class="form-control" id="fechaNac" required>
+            </div>
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">No. ID.</label>
+                <input type="text" class="form-control" id="fechaNac" required>
+            </div>
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Tipo ID.</label>
+                <input type="text" class="form-control" id="fechaNac" required>
+            </div>
+        </div>
+        <div class="col-12 bg-danger p-2 mt-4 text-white">Contactos y Redes Sociales:</div>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <label for="nombre" class="form-label">Tel.</label>
+                <input type="number" class="form-control" id="idtel" required>
+            </div>
+            <div class="col-md-4">
+                <label for="nombre" class="form-label">Movil/Cel</label>
+                <input type="text" class="form-control" id="casado" required>
+            </div>
+            <div class="col-md-2 ml-4">
+                <label for="nombre" class="form-label"></label>
+
+                <div class="form-check">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Whatsapp
+                    </label>
+                    <input class="form-check-input ml-2" type="checkbox" value="" id="flexCheckDefault">
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Telegram
+                    </label>
+                    <input class="form-check-input ml-3" type="checkbox" value="" id="flexCheckChecked" checked>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="nombre" class="form-label">Correo</label>
+                <input type="" class="form-control" id="casado" required>
+            </div>
+            <div class="col-md-4">
+                <label for="nombre" class="form-label">Correo</label>
+                <input type="text" class="form-control" id="casado" required>
+            </div>
+            <div class="col-md-4">
+                <label for="nombre" class="form-label">Correo</label>
+                <input type="text" class="form-control" id="casado" required>
+            </div>
+        </div>
+        <div class="col-12 bg-info p-2 text-white mt-4">Datos del Domicilio:</div>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="idnombre" required>
+            </div>
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Casado</label>
+                <input type="text" class="form-control" id="casado" required>
+            </div>
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Fecha de Nac.</label>
+                <input type="text" class="form-control" id="fechaNac" required>
+            </div>
+        </div>
+        <div class="col-12 bg-secondary p-2 mt-4 text-white">Información Laboral:</div>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="idnombre" required>
+            </div>
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Casado</label>
+                <input type="text" class="form-control" id="casado" required>
+            </div>
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Fecha de Nac.</label>
+                <input type="text" class="form-control" id="fechaNac" required>
+            </div>
+        </div>
+        <div class="col-12 bg-info p-2 text-white mt-4">Información Conyugal/Pareja:</div>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="idnombre" required>
+            </div>
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Casado</label>
+                <input type="text" class="form-control" id="casado" required>
+            </div>
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Fecha de Nac.</label>
+                <input type="text" class="form-control" id="fechaNac" required>
+            </div>
+        </div>
+        <div class="col-12 bg-secondary p-2 mt-4 text-white">Declaración de Gastos:</div>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="idnombre" required>
+            </div>
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Casado</label>
+                <input type="text" class="form-control" id="casado" required>
+            </div>
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Fecha de Nac.</label>
+                <input type="text" class="form-control" id="fechaNac" required>
+            </div>
+        </div>
+        <div class="col-12 bg-info p-2 text-white mt-4">Referencias personales y comerciales con historial crediticio:
+        </div>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="idnombre" required>
+            </div>
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Casado</label>
+                <input type="text" class="form-control" id="casado" required>
+            </div>
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Fecha de Nac.</label>
+                <input type="text" class="form-control" id="fechaNac" required>
+            </div>
+        </div>
+        <div class="border-top mt-2">
+            <div class="d-grid gap-2 mt-2 text-center">
+                <input type="submit" class="btn btn-primary form-group" value="Enviar">
+            </div>
+        </div>
+    </div>
+    </div> -->
+
+
+
+
+         
+
+            
+        </div>
+
+</body>
+
+</html>

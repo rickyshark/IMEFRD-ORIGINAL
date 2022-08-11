@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="Style.css" />
+   
+    <!-- Bootstrap CSS -->
+  <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    /> 
+    
+  </head>
+  <body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <div class="card" style="width: 18rem">
+      <img class="card-img-top" src="/Fondo II.jpeg" alt="Card image cap" />
+      <div class="card-body">
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+      </div>
+    </div>
+    <div class="container" id="contenedor">
+      <div class="card" id="carta">
+        <div class="card-header text-center text-muted">
+          Calcula el valor de tu crédito
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col">$2,000</div>
+            <div class="col" style="text-align: center">$5,000</div>
+            <div class="col" style="text-align: end">$10,000</div>
+            <div class="col-12">
+              <input
+                type="range"
+                min="10000"
+                max="30000"
+                value="100000"
+                step="10000"
+                class="slider"
+                id="monto"
+              />
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col">7 Días</div>
+            <div class="col" style="text-align: center">15 Días</div>
+            <div class="col" style="text-align: end">30 Días</div>
+            <div class="col-12">
+              <input
+                type="range"
+                min="10000"
+                max="30000"
+                value="100000"
+                step="10000"
+                class="slider"
+                id="dias"
+              />
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-12">Monto del préstamo: $2,000</div>
+            <div class="col-12">Intereses: $117</div>
+            <div class="col-12">Total a pagar: $2,117</div>
+          </div>
+          <div class="text-center">
+            <a href="#" class="btn btn-primary mt-5">Solicita tu préstamo</a>
+          </div>
+          <p class="text-center">Tasa del 0.83% /día</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
